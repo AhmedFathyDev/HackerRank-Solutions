@@ -1,23 +1,18 @@
 
-#include <iostream>
-#include <string>
-
-using namespace std;
+#include <stdio.h>
+#include <stdlib.h>
 
 int main(void)
 {
-    ios_base::sync_with_stdio(false);
-    cout.tie(nullptr);
-    cin.tie(nullptr);
-
     int t, n, k, ans;
 
-    cin >> t;
+    scanf("%i", &t);
 
     while (t--)
     {
         ans = 0;
-        cin >> n >> k;
+
+        scanf("%i %i", &n, &k);
 
         for (int b = n; b > 0; b--)
         {
@@ -30,7 +25,7 @@ int main(void)
             }
         }
 
-        cout << ans << "\n";
+        printf("%i\n", ans);
     }
 
     return EXIT_SUCCESS;
