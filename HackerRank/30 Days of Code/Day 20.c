@@ -43,6 +43,7 @@ int main(void)
 
     printf("Array is sorted in %i swaps.\n", numberOfSwaps);
     printf("First Element: %i", a[0]);
+    printf("First Element: %i\n", a[0]);
     printf("Last Element: %i", a[n - 1]);
 
     return EXIT_SUCCESS;
