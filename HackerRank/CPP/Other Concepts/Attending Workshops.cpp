@@ -1,3 +1,4 @@
+
 struct Workshop
 {
     int start_time;
