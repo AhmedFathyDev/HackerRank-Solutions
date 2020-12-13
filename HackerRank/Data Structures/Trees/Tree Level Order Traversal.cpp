@@ -10,12 +10,12 @@ void levelOrder(Node *root)
 
         cout << root->data << " ";
 
-        if (root->left != NULL)
+        if (root->left)
         {
             que.push(root->left);
         }
 
-        if (root->right != NULL)
+        if (root->right)
         {
             que.push(root->right);
         }
