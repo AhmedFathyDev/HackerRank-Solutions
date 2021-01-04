@@ -71,26 +71,25 @@ node *insert(node *root, int val)
 
     int balanceFactor = nodeHt(root->left) - nodeHt(root->right);
 
-    if (balanceFactor < -1 && val > root->right->val)
+    if (balanceFactor > 1)
     {
-        root = rotateLeft(root);
-    }
+        if (val < root->left->val)
+        {
+            return rotateRight(root);
+        }
 
-    if (balanceFactor > 1 && val < root->left->val)
-    {
-        root = rotateRight(root);
-    }
-
-    if (balanceFactor < -1 && val < root->right->val)
-    {
-        root->right = rotateRight(root->right);
-        root = rotateLeft(root);
-    }
-
-    if (balanceFactor > 1 && val > root->left->val)
-    {
         root->left = rotateLeft(root->left);
-        root = rotateRight(root);
+        return rotateRight(root);
+    }
+    if (balanceFactor < -1)
+    {
+        if (val > root->right->val)
+        {
+            return rotateLeft(root);
+        }
+
+        root->right = rotateRight(root->right);
+        return rotateLeft(root);
     }
 
     return root;
