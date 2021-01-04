@@ -87,7 +87,7 @@ node *insert(node *root, int val)
         {
             return rotateLeft(root);
         }
-
+        
         root->right = rotateRight(root->right);
         return rotateLeft(root);
     }
