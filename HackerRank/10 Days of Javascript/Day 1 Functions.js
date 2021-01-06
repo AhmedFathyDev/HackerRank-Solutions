@@ -1,10 +1,6 @@
 
 function factorial(n) {
 
-    if (n == 2) {
-        return n;
-    }
-
-    return n * factorial(n - 1);
+    return n == 2 ? n : n * factorial(n - 1);
     
 }
