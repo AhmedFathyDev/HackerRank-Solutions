@@ -38,14 +38,7 @@ int main(void)
             top = st.top();
             st.pop();
 
-            if (st.empty())
-            {
-                area = v[top] * i;
-            }
-            else
-            {
-                area = v[top] * (i - st.top() - 1);
-            }
+            area = v[top] * (st.empty() ? i : (i - st.top() - 1));
 
             maxArea = MAX(area, maxArea);
         }
@@ -56,14 +49,7 @@ int main(void)
         top = st.top();
         st.pop();
 
-        if (st.empty())
-        {
-            area = v[top] * i;
-        }
-        else
-        {
-            area = v[top] * (i - st.top() - 1);
-        }
+        area = v[top] * (st.empty() ? i : (i - st.top() - 1));
 
         maxArea = MAX(area, maxArea);
     }
