@@ -2,7 +2,6 @@
 //  To more understand watch this: -> https://youtu.be/QKkShXV-2cY
 
 #include <stack>
-#include <vector>
 #include <iostream>
 
 #define endl '\n'
