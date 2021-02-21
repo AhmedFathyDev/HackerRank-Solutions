@@ -1,10 +1,11 @@
 
+//  To more understand watch this: -> https://youtu.be/QKkShXV-2cY
+
 #include <stack>
 #include <vector>
 #include <iostream>
 
 #define endl '\n'
-#define MIN(X, Y) (X < Y ? X : Y)
 #define MAX(X, Y) (X > Y ? X : Y)
 
 int main(void)
@@ -14,42 +15,36 @@ int main(void)
     std::cout.tie(NULL);
     std::cin.tie(NULL);
 
-    int n, mn, mx = 0;
+    int n, mx = 0;
     std::cin >> n;
 
-    std::stack<int> stk;
     std::vector<int> p(n);
-    std::vector<int> days(n);
+    std::stack<int> stkDays;
+    std::stack<int> stkPlant;
 
     for (size_t i = 0; i < n; i++)
     {
         std::cin >> p[i];
     }
 
-    mn = p[0];
-    stk.push(0);
-
-    for (size_t i = 1; i < n; i++)
+    for (size_t i = 0; i < n; i++)
     {
-        if (p[i] > p[i - 1])
+        int day = 0;
+
+        while (stkPlant.size() && stkPlant.top() >= p[i])
         {
-            days[i] = 1;
+            day = MAX(day, stkDays.top());
+
+            stkDays.pop();
+            stkPlant.pop();
         }
 
-        mn = MIN(mn, p[i]);
+        day = stkDays.size() ? day + 1 : 0;
 
-        while (stk.size() && p[i] <= p[stk.top()])
-        {
-            if (p[i] > mn)
-            {
-                days[i] = MAX(days[i], days[stk.top()] + 1);
-            }
+        mx = MAX(mx, day);
 
-            stk.pop();
-        }
-
-        mx = MAX(mx, days[i]);
-        stk.push(i);
+        stkDays.push(day);
+        stkPlant.push(p[i]);
     }
 
     std::cout << mx;
