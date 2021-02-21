@@ -23,7 +23,7 @@ int main(void)
 {
     std::string s, t;
     std::cin >> s >> t;
-    std::cout << strings_xor(s, t) << "\n";
+    std::cout << strings_xor(s, t);
 
     return EXIT_SUCCESS;
 }
