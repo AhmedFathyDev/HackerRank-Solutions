@@ -18,20 +18,15 @@ int main(void)
     int n, mx = 0;
     std::cin >> n;
 
-    std::vector<int> p(n);
     std::stack<int> stkDays;
     std::stack<int> stkPlant;
 
-    for (size_t i = 0; i < n; i++)
+    while (n--)
     {
-        std::cin >> p[i];
-    }
+        int plant, day = 0;
+        std::cin >> plant;
 
-    for (size_t i = 0; i < n; i++)
-    {
-        int day = 0;
-
-        while (stkPlant.size() && stkPlant.top() >= p[i])
+        while (stkPlant.size() && stkPlant.top() >= plant)
         {
             day = MAX(day, stkDays.top());
 
@@ -44,7 +39,7 @@ int main(void)
         mx = MAX(mx, day);
 
         stkDays.push(day);
-        stkPlant.push(p[i]);
+        stkPlant.push(plant);
     }
 
     std::cout << mx;
