@@ -3,7 +3,6 @@
 #include <iostream>
 
 #define endl '\n'
-#define MAX(X, Y) ((X) < (Y) ? (Y) : (X))
 
 int main(void)
 {
