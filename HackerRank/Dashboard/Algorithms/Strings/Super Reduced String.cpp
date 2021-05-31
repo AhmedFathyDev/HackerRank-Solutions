@@ -1,5 +1,7 @@
 
+#include <stack>
 #include <iostream>
+#include <algorithm>
 
 int main(void)
 {
@@ -8,31 +10,46 @@ int main(void)
     std::cin.tie(NULL);
 
     std::string s;
-    int length;
+    std::stack<char> stk;
 
     std::cin >> s;
 
-    do
+    for (size_t i = 0; i < s.size(); ++i)
     {
-        std::string s2;
-        length = s.size();
-
-        for (size_t j = 0; j < s.size(); ++j)
+        if (stk.empty())
         {
-            if (s[j] != s[j + 1] || j == s.size() - 1)
+            stk.push(s[i]);
+        }
+        else
+        {
+            if (stk.top() == s[i])
             {
-                s2 += s[j];
+                stk.pop();
             }
             else
             {
-                ++j;
+                stk.push(s[i]);
             }
         }
+    }
 
-        s = s2;
-    } while (length != s.size());
+    if (stk.size())
+    {
+        std::string ans;
 
-    std::cout << (s.size() ? s : "Empty String");
+        while (stk.size())
+        {
+            ans += stk.top();
+            stk.pop();
+        }
+
+        reverse(ans.begin(), ans.end());
+        std::cout << ans;
+    }
+    else
+    {
+        std::cout << "Empty String";
+    }
 
     return EXIT_SUCCESS;
 }
