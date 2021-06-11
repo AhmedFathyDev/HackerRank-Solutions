@@ -1,3 +1,9 @@
 #!/bin/python3
 
-print(*range(1, int(input())+1), sep='')
+
+def main():
+    print(*range(1, int(input())+1), sep='')
+
+
+if __name__ == '__main__':
+    main()
