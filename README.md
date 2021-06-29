@@ -1,3 +1,3 @@
 # Problem-Solving
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+Some of Codeforces, HackerRank, and LeetCode problem solutions. Above than 300 solutions.
