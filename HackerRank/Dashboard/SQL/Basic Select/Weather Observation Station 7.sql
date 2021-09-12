@@ -1,3 +1,3 @@
 SELECT DISTINCT CITY
 FROM STATION
-WHERE LOWER(SUBSTR(CITY, LENGTH(CITY), 1)) in ('a', 'e', 'i', 'o', 'u');
+WHERE CITY LIKE '%[a, e, i, o, u]';
