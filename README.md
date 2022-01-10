@@ -1,8 +1,8 @@
 
 # Websites Solutions
 
-## [LeetCode Problems](LeetCode/LeetCode.md)
+## [LeetCode Problems](LeetCode/README.md)
 
-## [Codeforces Problems](Codeforces/Codeforces.md)
+## [Codeforces Problems](Codeforces/README.md)
 
-## [HackerRank Challenges](HackerRank/HackerRank.md)
+## [HackerRank Challenges](HackerRank/README.md)
