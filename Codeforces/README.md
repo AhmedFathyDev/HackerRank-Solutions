@@ -1,8 +1,6 @@
 
 # Codeforces
-# [Back](../README.md)
-
-## [My Codeforces Profile](https://codeforces.com/profile/AhmedFathyDev)
+### [Back ⬅️](../README.md)
 
 ## [Codeforces Problemset Solutions](Problemset/README.md)
 
