@@ -1,5 +1,5 @@
 
-# Problem Solving
+# Websites Solutions
 
 ## [LeetCode Problems](LeetCode/LeetCode.md)
 
