@@ -1,4 +1,6 @@
 
+# Problem Solving
+
 ## [LeetCode Problems](LeetCode/LeetCode.md)
 
 ## [Codeforces Problems](Codeforces/Codeforces.md)
