@@ -1,5 +1,5 @@
 
-# [Occupations]
+# Occupations
 ### [Back ⬅️](README.md)
 
 ## **MySQL** solution
