@@ -2,7 +2,7 @@
 # [Occupations]
 ### [Back ⬅️](README.md)
 
-## **MS SQL** solution
+## **MySQL** solution
 
 ```sql
 SET @`IDX_Doctor`=0;
