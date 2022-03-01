@@ -1,4 +1,12 @@
-SELECT CASE
+
+# Type of Triangle
+### [Back ⬅️](README.md)
+
+## **MySQL** solution
+
+```sql
+SELECT
+    CASE
         WHEN 2 * GREATEST(A, B, C) >= (A + B + C)
             THEN "Not A Triangle"
         WHEN A = B AND A = C
@@ -8,3 +16,4 @@ SELECT CASE
         ELSE "Scalene"
     END
 FROM TRIANGLES;
+```
