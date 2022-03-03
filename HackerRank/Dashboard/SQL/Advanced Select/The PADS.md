@@ -2,7 +2,7 @@
 # The PADS
 ### [Back ⬅️](README.md)
 
-## **MS SQL** solution
+## **MS SQL Server** solution
 
 ```sql
 SELECT CONCAT(Name, '(', Substring(Occupation, 1, 1), ')') AS Name
