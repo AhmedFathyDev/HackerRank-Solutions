@@ -1,5 +1,5 @@
 
-# Binary Tree Nodes
+# New Companies
 ### [Back ⬅️](README.md)
 
 ## **MS SQL Server** solution
