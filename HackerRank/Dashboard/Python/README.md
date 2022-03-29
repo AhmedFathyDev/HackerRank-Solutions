@@ -4,3 +4,4 @@
 
 ## [Introduction](Introduction/README.md)
 ## [Basic Data Types](Basic%20Data%20Types/README.md)
+## [Strings](Strings/README.md)
