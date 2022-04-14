@@ -7,3 +7,4 @@
 ## [What's Your Name?](What's%20Your%20Name.md)
 ## [Mutations](Mutations.md)
 ## [Find a string](Find%20a%20string.md)
+## [String Validators](String%20Validators.md)
