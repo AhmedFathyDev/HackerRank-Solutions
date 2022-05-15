@@ -1,8 +1,8 @@
 
-# Websites Solutions
+# HackerRank
 
-## [Codeforces Problems](Codeforces/README.md)
+## [HackerRank Challenges Solutions](Dashboard/README.md)
 
-## [HackerRank Challenges](HackerRank/README.md)
+## [HackerRank Profile](https://www.hackerrank.com/ahmedfathydev)
 
-## [LeetCode Problems](LeetCode/README.md)
+![HackerRank](HackerRank-Logo.png)
