@@ -54,7 +54,7 @@ public class Solution
     {
         Console.ReadLine();
 
-        int[] arr = (from s in Console.ReadLine()?.Split() select Convert.ToInt32(s)).ToArray();
+        int[] arr = Console.ReadLine().Split(' ').ToList().Select(x => Convert.ToInt32(x)).ToArray();
         
         InsertionSort(arr);
     }
