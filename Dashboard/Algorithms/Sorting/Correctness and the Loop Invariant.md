@@ -20,7 +20,7 @@ public class Solution
         return true;
     }
     
-    public static void InsertionSort(int[] arr)
+    private static void insertionSort(int[] arr)
     {
         for (var i = 1; i < arr.Length; ++i)
         {
@@ -47,7 +47,7 @@ public class Solution
     {
         Console.ReadLine();
         
-        InsertionSort(Console.ReadLine().Split(' ').ToList().Select(x => Convert.ToInt32(x)).ToArray());
+        insertionSort(Console.ReadLine().Split(' ').ToList().Select(x => Convert.ToInt32(x)).ToArray());
     }
 }
 ```
