@@ -47,7 +47,7 @@ public class Solution
     {
         Console.ReadLine();
         
-        insertionSort(Console.ReadLine().Split(' ').ToList().Select(x => Convert.ToInt32(x)).ToArray());
+        insertionSort(Console.ReadLine()!.Split(' ').ToList().Select(x => Convert.ToInt32(x)).ToArray());
     }
 }
 ```
