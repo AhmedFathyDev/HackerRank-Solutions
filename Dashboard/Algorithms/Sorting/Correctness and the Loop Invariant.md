@@ -24,19 +24,20 @@ public class Solution
     {
         for (var i = 1; i < arr.Length; ++i)
         {
-            var arrI = arr[i];
-            var j = i;
+            var key = arr[i];
+            var j = i - 1;
 
-            for (; j > 0 && arrI < arr[j - 1]; --j)
+            while (j >= 0 && key < arr[j])
             {
-                arr[j] = arr[j - 1];
+                arr[j + 1] = arr[j];
+                --j;
             }
 
-            arr[j] = arrI;
+            arr[j + 1] = key;
 
-            if (!Solution.isSorted(arr, j))
+            if (!Solution.isSorted(arr, i))
             {
-                Console.WriteLine($"Sort Failed at index: {i - 1} string: '{string.Join(", ", arr.Select(x => x.ToString()))}'");
+                Console.WriteLine($"Sort Failed at index: {i} string: '{string.Join(", ", arr.Select(x => x.ToString()))}'");
             }
         }
 
