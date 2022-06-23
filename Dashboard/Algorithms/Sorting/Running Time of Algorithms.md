@@ -13,16 +13,17 @@ public class Solution
 
         for (var i = 1; i < arr.Count; ++i)
         {
-            var arrI = arr[i];
-            var j = i;
+            var key = arr[i];
+            var j = i - 1;
 
-            for (; j > 0 && arrI < arr[j - 1]; --j)
+            while (j >= 0 && key < arr[j])
             {
-                arr[j] = arr[j - 1];
+                arr[j + 1] = arr[j];
                 ++shifts;
+                --j;
             }
 
-            arr[j] = arrI;
+            arr[j + 1] = key;
         }
 
         return shifts;
