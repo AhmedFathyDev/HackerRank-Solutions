@@ -23,9 +23,9 @@ public class Solution
     {
         Console.ReadLine();
         
-        var arr = countingSort(Console.ReadLine()!.Split(' ').ToList().Select(i => Convert.ToInt32(i)).ToList());
+        var freqArr = countingSort(Console.ReadLine()!.Split(' ').ToList().Select(i => Convert.ToInt32(i)).ToList());
 
-        Console.WriteLine(string.Join(" ", arr));
+        Console.WriteLine(string.Join(" ", freqArr));
     }
 }
 ```
