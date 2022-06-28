@@ -6,3 +6,4 @@
 ## [Running Time of Algorithms](Running%20Time%20of%20Algorithms.md)
 ## [Counting Sort 1](Counting%20Sort%201.md)
 ## [Counting Sort 2](Counting%20Sort%202.md)
+## [The Full Counting Sort](The%20Full%20Counting%20Sort.md)
