@@ -5,9 +5,11 @@
 ## **C#** solution
 
 ```cs
-public class Solution
+namespace Challenge;
+
+public static class Program
 {
-    private static bool isSorted(int[] arr, int index)
+    private static bool IsSorted(IReadOnlyList<int> arr, int index)
     {
         for (var i = 0; i < index; ++i)
         {
@@ -20,7 +22,7 @@ public class Solution
         return true;
     }
     
-    private static void insertionSort(int[] arr)
+    private static void InsertionSort(int[] arr)
     {
         for (var i = 1; i < arr.Length; ++i)
         {
@@ -35,7 +37,7 @@ public class Solution
 
             arr[j + 1] = key;
 
-            if (!Solution.isSorted(arr, i))
+            if (!IsSorted(arr, i))
             {
                 Console.WriteLine($"Sort Failed at index: {i} string: '{string.Join(", ", arr.Select(x => x.ToString()))}'");
             }
@@ -48,7 +50,7 @@ public class Solution
     {
         Console.ReadLine();
         
-        insertionSort(Console.ReadLine()!.Split(' ').ToList().Select(x => Convert.ToInt32(x)).ToArray());
+        InsertionSort(Console.ReadLine()!.Split(' ').ToList().Select(x => Convert.ToInt32(x)).ToArray());
     }
 }
 ```

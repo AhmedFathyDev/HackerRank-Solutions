@@ -5,9 +5,11 @@
 ## **C#** solution
 
 ```cs
-public class Solution
+namespace Challenge;
+
+public static class Program
 {
-    private static int runningTime(List<int> arr)
+    private static int RunningTime(IList<int> arr)
     {
         var shifts = 0;
 
@@ -33,7 +35,7 @@ public class Solution
     {
         Console.ReadLine();
         
-        Console.WriteLine(runningTime(Console.ReadLine()!.Split(' ').ToList().Select(x => Convert.ToInt32(x)).ToList()));
+        Console.WriteLine(RunningTime(Console.ReadLine()!.Split(' ').ToArray().Select(x => Convert.ToInt32(x)).ToArray()));
     }
 }
 ```

@@ -5,11 +5,13 @@
 ## **C#** solution
 
 ```cs
-public class Solution
+namespace Challenge;
+
+public static class Program
 {
-    private static List<int> countingSort(List<int> arr)
+    private static IEnumerable<int> CountingSort(IEnumerable<int> arr)
     {
-        var freqArr = new List<int>(new int[100]);
+        var freqArr = new int[100];
 
         foreach (var i in arr)
         {
@@ -23,7 +25,7 @@ public class Solution
     {
         Console.ReadLine();
         
-        var freqArr = countingSort(Console.ReadLine()!.Split(' ').ToList().Select(i => Convert.ToInt32(i)).ToList());
+        var freqArr = CountingSort(Console.ReadLine()!.Split(' ').ToArray().Select(i => Convert.ToInt32(i)).ToArray());
 
         Console.WriteLine(string.Join(" ", freqArr));
     }
