@@ -46,6 +46,7 @@ public static class Program
 
         return inversions;
     }
+
     private static long MergeSort(IList<int> arr, IList<int> tempArr, int firstIndex, int lastIndex)
     {
         return firstIndex < lastIndex ?
@@ -53,6 +54,7 @@ public static class Program
             MergeSort(arr, tempArr, (firstIndex + lastIndex) / 2 + 1, lastIndex) +
             Merge(arr, tempArr, firstIndex, (firstIndex + lastIndex) / 2, (firstIndex + lastIndex) / 2 + 1, lastIndex) : 0;
     }
+    
     private static long Sort(IList<int> arr)
     {
         var tempArr = new int[arr.Count];
