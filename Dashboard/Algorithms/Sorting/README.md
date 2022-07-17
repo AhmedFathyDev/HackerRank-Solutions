@@ -9,3 +9,4 @@
 ## [The Full Counting Sort](The%20Full%20Counting%20Sort.md)
 ## [Closest Numbers](Closest%20Numbers.md)
 ## [Find the Median](Find%20the%20Median.md)
+## [Insertion Sort Advanced Analysis](Insertion%20Sort%20Advanced%20Analysis.md)
