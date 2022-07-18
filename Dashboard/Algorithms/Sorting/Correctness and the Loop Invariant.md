@@ -9,22 +9,22 @@ namespace Challenge;
 
 public static class Program
 {
-    private static bool IsSorted(IReadOnlyList<int> arr, int index)
+    private static void InsertionSort(IList<int> arr)
     {
-        for (var i = 0; i < index; ++i)
+        bool IsSorted(int index)
         {
-            if (arr[i] > arr[i + 1])
+            for (var i = 0; i < index; ++i)
             {
-                return false;
+                if (arr[i] > arr[i + 1])
+                {
+                    return false;
+                }
             }
-        }
 
-        return true;
-    }
-    
-    private static void InsertionSort(int[] arr)
-    {
-        for (var i = 1; i < arr.Length; ++i)
+            return true;
+        }
+        
+        for (var i = 1; i < arr.Count; ++i)
         {
             var key = arr[i];
             var j = i - 1;
@@ -37,7 +37,7 @@ public static class Program
 
             arr[j + 1] = key;
 
-            if (!IsSorted(arr, i))
+            if (!IsSorted(i))
             {
                 Console.WriteLine($"Sort Failed at index: {i} string: '{string.Join(", ", arr.Select(x => x.ToString()))}'");
             }
@@ -46,7 +46,7 @@ public static class Program
         Console.WriteLine(string.Join(" ", arr));
     }
 
-    public static void Main(string[] args)
+    public static void Main()
     {
         Console.ReadLine();
         

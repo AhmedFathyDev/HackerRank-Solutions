@@ -10,3 +10,5 @@
 ## [Closest Numbers](Closest%20Numbers.md)
 ## [Find the Median](Find%20the%20Median.md)
 ## [Insertion Sort Advanced Analysis](Insertion%20Sort%20Advanced%20Analysis.md)
+## [Fraudulent Activity Notifications](Fraudulent%20Activity%20Notifications.md)
+## [Lily's Homework](Lily's%20Homework.md)
