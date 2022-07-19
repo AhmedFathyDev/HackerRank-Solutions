@@ -1,4 +1,10 @@
 
+# Quicksort 1 - Partition
+### [Back ⬅️](README.md)
+
+## **C++** solution
+
+```cpp
 #include <iostream>
 
 void swap(int *a, int *b)
@@ -74,3 +80,4 @@ int main(void)
 
     return EXIT_SUCCESS;
 }
+```

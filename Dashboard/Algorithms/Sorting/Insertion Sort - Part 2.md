@@ -1,4 +1,10 @@
 
+# Insertion Sort - Part 2
+### [Back ⬅️](README.md)
+
+## **C++** solution
+
+```cpp
 #include <iostream>
 
 #define endl '\n'
@@ -42,3 +48,4 @@ int main(void)
 
     return EXIT_SUCCESS;
 }
+```

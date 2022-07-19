@@ -2,6 +2,11 @@
 # Sorting
 ### [Back ⬅️](../README.md)
 
+## [Big Sorting](Big%20Sorting.md)
+## [Intro to Tutorial Challenges](Intro%20to%20Tutorial%20Challenges.md)
+## [Quicksort 1 - Partition](Quicksort%201%20-%20Partition.md)
+## [Insertion Sort - Part 1](Insertion%20Sort%20-%20Part%201.md)
+## [Insertion Sort - Part 2](Insertion%20Sort%20-%20Part%202.md)
 ## [Correctness and the Loop Invariant](Correctness%20and%20the%20Loop%20Invariant.md)
 ## [Running Time of Algorithms](Running%20Time%20of%20Algorithms.md)
 ## [Counting Sort 1](Counting%20Sort%201.md)
