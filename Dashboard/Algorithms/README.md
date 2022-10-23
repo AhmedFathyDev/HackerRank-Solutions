@@ -6,3 +6,4 @@
 ## [Implementation](Implementation/README.md)
 ## [Strings](Strings/README.md)
 ## [Sorting](Sorting/README.md)
+## [Search](Search/README.md)
