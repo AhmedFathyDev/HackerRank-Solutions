@@ -1,4 +1,10 @@
 
+# Alternating Characters
+### [Back ⬅️](README.md)
+
+## **C++** solution
+
+```cpp
 #include <iostream>
 
 int main(void)
@@ -32,3 +38,4 @@ int main(void)
 
     return EXIT_SUCCESS;
 }
+```

@@ -1,4 +1,10 @@
 
+# Palindrome Index
+### [Back ⬅️](README.md)
+
+## **C++** solution
+
+```cpp
 #include <iostream>
 
 int palindrome_index(std::string s)
@@ -51,3 +57,4 @@ int main(void)
 
     return EXIT_SUCCESS;
 }
+```

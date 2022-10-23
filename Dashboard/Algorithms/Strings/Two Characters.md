@@ -1,4 +1,10 @@
 
+# Two Characters
+### [Back ⬅️](README.md)
+
+## **C++** solution
+
+```cpp
 #include <iostream>
 
 #define MAX(X, Y) ((X) < (Y) ? (Y) : (X))
@@ -60,3 +66,4 @@ int main(void)
 
     return EXIT_SUCCESS;
 }
+```

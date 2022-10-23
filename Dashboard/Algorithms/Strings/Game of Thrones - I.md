@@ -1,4 +1,10 @@
 
+# Game of Thrones - I
+### [Back ⬅️](README.md)
+
+## **C++** solution
+
+```cpp
 #include <iostream>
 
 int characters_frequency[26];
@@ -32,3 +38,4 @@ int main(void)
 
     return EXIT_SUCCESS;
 }
+```

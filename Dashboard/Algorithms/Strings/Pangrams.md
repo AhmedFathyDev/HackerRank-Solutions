@@ -1,4 +1,10 @@
 
+# Pangrams
+### [Back ⬅️](README.md)
+
+## **C++** solution
+
+```cpp
 #include <iostream>
 
 bool alphabets[26];
@@ -33,3 +39,4 @@ int main(void)
 
     return EXIT_SUCCESS;
 }
+```

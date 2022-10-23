@@ -1,4 +1,10 @@
 
+# Strong Password
+### [Back ⬅️](README.md)
+
+## **C++** solution
+
+```cpp
 #include <iostream>
 
 #define MAX(X, Y) ((X) > (Y) ? (X) : (Y))
@@ -53,3 +59,4 @@ int main(void)
 
     return EXIT_SUCCESS;
 }
+```

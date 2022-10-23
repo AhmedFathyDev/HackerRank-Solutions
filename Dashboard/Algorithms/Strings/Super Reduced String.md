@@ -1,4 +1,10 @@
 
+# Super Reduced String
+### [Back ⬅️](README.md)
+
+## **C++** solution
+
+```cpp
 #include <stack>
 #include <iostream>
 #include <algorithm>
@@ -53,3 +59,4 @@ int main(void)
 
     return EXIT_SUCCESS;
 }
+```

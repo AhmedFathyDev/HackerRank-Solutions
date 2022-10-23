@@ -1,4 +1,10 @@
 
+# Sherlock and the Valid String
+### [Back ⬅️](README.md)
+
+## **C++** solution
+
+```cpp
 #include <vector>
 #include <iostream>
 #include <algorithm>
@@ -43,3 +49,4 @@ int main(void)
 
     return EXIT_SUCCESS;
 }
+```

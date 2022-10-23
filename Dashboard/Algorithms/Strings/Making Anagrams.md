@@ -1,4 +1,10 @@
 
+# Making Anagrams
+### [Back ⬅️](README.md)
+
+## **C++** solution
+
+```cpp
 #include <iostream>
 #include <vector>
 
@@ -35,3 +41,4 @@ int main(void)
     
     return EXIT_SUCCESS;
 }
+```

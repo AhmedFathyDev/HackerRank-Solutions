@@ -1,4 +1,10 @@
 
+# Weighted Uniform Strings
+### [Back ⬅️](README.md)
+
+## **C++** solution
+
+```cpp
 #include <iostream>
 
 bool weights[10 * 1000 * 1000];
@@ -45,3 +51,4 @@ int main(void)
 
     return EXIT_SUCCESS;
 }
+```
